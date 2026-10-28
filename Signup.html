@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io (1)/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
+    
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: "poppins" ,Arial, Helvetica, sans-serif;
+
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: serif;
+        }
+        .class{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        
+        .form{
+            width: 500px;
+            height: 550px;
+            border: 0px solid rgb(50, 48, 48);
+            border-radius: 10px;    
+            animation: fadeIn 1s ;
+            box-shadow: 0px 0px 9px ;
+        }
+
+        /* @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        } */
+        .table{
+            width: 100%;
+        }
+        .txt{
+            width: 300px;
+            padding: 20px;
+            color: black;
+            position: relative;
+            left: 20%;
+            border-radius: 50px;
+        }
+        .sub{
+            width: 300px;
+            padding: 25px;
+            color: white;
+            position: relative;
+            left: 20%;
+            border-radius: 50px;
+            background-color: black;
+        }
+        .account{
+            position: relative;
+            top: 0px;
+            left: 130px;
+        }
+        .login{
+            color: black;
+            text-decoration: none;   
+            font-weight: 600;
+            
+        }
+        .login:hover{
+            text-decoration: none;
+            color: rgb(183, 183, 183);
+        }
+    </style>
+</head>
+<body>
+    <div class="class">
+        <form class="form">
+            <table class="table">
+                <tr>
+                    <td>
+                        <font><center><h1>Sign Up</h1></center></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Username" class="txt" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Email" class="txt" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Password" class="txt" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Confirm Password" class="txt" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" placeholder="Contact Number" class="txt" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="submit" formaction="Login.html" placeholder="Sign Up" class="sub" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            <p class="account">Already have an account? <a href="Login.html" class="login">Login</a></p>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io (1)/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
+    
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins" ,Arial, Helvetica, sans-serif;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.main-login-div{
+    width: 400px;
+    background-color: transparent;
+    border: px solid black;
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 0px 9px;
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.main-login-div h1{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.main-login-div .input-box{
+    width: auto;
+    height: auto;
+    /* padding: 10px 0px 10px 0px; */
+    margin: 30px 0px ;
+    position: relative;
+    color: black;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    /* background: transparent; */
+    outline: none;
+    border-radius: 40px;
+    font-size: .8rem;
+    color: black;
+    padding: 15px 45px 15px 20px;
+
+}
+.input-box input :placeholder {
+    color: black;
+    background-color: rgb(97, 180, 227);
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+.main-login-div .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    /* align-items: center; */
+    margin: -15px 0px 15px;
+}
+.remember-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: black;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+}
+
+@media (max-width:335px) {
+    .media_1{
+        /* font-size: 0.625rem; */
+        padding-right: 35px;
+    }
+    
+}
+
+.main-login-div .btn{
+    width: 100%;
+    height: 46px;
+    background-color:hsl(204, 91%, 53%) ;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(207, 207, 207, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+.main-login-div .register-link{
+    font-size: 0.725rem;
+    text-align: center;
+    margin: 20px 0px 15px;
+}
+.register-link p a{
+    color: black;
+    text-decoration: none;   
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+p{
+    font-size: 14px;
+}
+.btn{
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: hsl(204, 80%, 63%);
+}
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        
+
+        <div class="main-login-div">
+            <!-- Login Form -->
+            <form action="form.py">
+                <h3>Welcome</h3>
+                <h3> 𝓔𝓪𝓼𝔂 𝓓𝓻𝓲𝓿𝓮 𝓡𝓮𝓷𝓽𝓪𝓵𝓼</h3>
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock'></i>
+                </div>
+                <div class="remember-forgot">
+                    <label for="rememberA" class="media_1">
+                        <input type="checkbox" id="rememberA" required> Remember me
+                    </label>
+                    <a href="#" class="media_2">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn" formaction="" >Login</button>
+                <div class="register-link">
+                <p>Don't have an account? <a href="Signup.html">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting the default way
+          // Check if the form fields are filled (optional)
+          // If validation passes, redirect
+          window.location.href = 'index.html'; // Redirect to the index page
+        });
+      </script>
+</body>
+</html>
